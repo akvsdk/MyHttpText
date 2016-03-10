@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.joy.ep.myhttptext"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.bugtags.library:bugtags-lib:1.1.2'
+    compile project(':HttpWrapper')
+}
+bugtags {
+    appKey "ea43ad8098f47ba92ed6b2f010efc63b"
+    appSecret  "e78fa28a98fd4d4fcc5295c2f92eb08d"
+}

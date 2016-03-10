@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.joy.ep.myhttptext.MainActivity">
+    <item
+        android:id="@+id/IP"
+        android:orderInCategory="100"
+        android:title="IP"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/News"
+        android:orderInCategory="100"
+        android:title="News"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Gank"
+        android:orderInCategory="100"
+        android:title="Gank"
+        app:showAsAction="never"/>
+</menu>
